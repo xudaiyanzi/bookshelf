@@ -81,7 +81,6 @@ def create_app(test_config=None):
       if book is None:
         abort(404)
       if 'rating' in body:
-
         book.rating = body['rating']
         ## OR use 'get' to retrive the rating in json
         # book.rating = int(body.get('rating'))
